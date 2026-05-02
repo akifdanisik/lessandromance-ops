@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Less & Romance — Ops</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#090909;--surf:#111;--surf2:#181818;--surf3:#222;
+  --border:#252525;--border2:#1c1c1c;
+  --text:#efefef;--muted:#484848;--muted2:#767676;
+  --accent:#efefef;--accent-dim:rgba(239,239,239,.05);
+  --green:#767676;--red:#b0b0b0;--yellow:#686868;--blue:#909090;
+  --radius:3px;
+}
+[data-theme="light"]{
+  --bg:#f8f8f8;--surf:#fff;--surf2:#f3f3f3;--surf3:#eaeaea;
+  --border:#e2e2e2;--border2:#ebebeb;
+  --text:#111;--muted:#bbb;--muted2:#888;
+  --accent:#111;--accent-dim:rgba(0,0,0,.04);
+  --green:#666;--red:#333;--yellow:#555;--blue:#555;
+}
+body{font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);font-size:13px;display:flex;flex-direction:column;height:100vh;overflow:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── TOP BAR ── */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:44px;background:var(--surf);border-bottom:1px solid var(--border);flex-shrink:0;z-index:100}
+.topbar-left{display:flex;align-items:center;gap:16px}
+.brand{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--text)}
+.brand-sub{font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.04em;margin-top:1px}
+.topbar-right{display:flex;align-items:center;gap:14px;font-size:11px;color:var(--muted)}
+.live-dot{width:5px;height:5px;background:var(--muted2);border-radius:50%;flex-shrink:0}
+.topbar-time{font-variant-numeric:tabular-nums;letter-spacing:.03em;color:var(--muted2)}
+.theme-btn{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:var(--radius);padding:3px 10px;cursor:pointer;font-size:10px;font-family:inherit;letter-spacing:.06em;text-transform:uppercase;transition:all .12s}
+.theme-btn:hover{border-color:var(--muted2);color:var(--text)}
+
+/* ── APP BODY ── */
+.app-body{display:flex;flex:1;overflow:hidden}
+
+/* ── SIDEBAR ── */
+.sidebar{width:176px;background:var(--surf);border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0;overflow:hidden}
+.sidebar-section{padding:20px 16px 6px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.nav-item{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;border-left:2px solid transparent;cursor:pointer;font-size:12px;font-weight:400;color:var(--muted2);transition:color .1s;user-select:none}
+.nav-item:hover{color:var(--text)}
+.nav-item.active{color:var(--text);border-left-color:var(--text);font-weight:500}
+.nav-badge{color:var(--muted);font-size:10px;font-weight:500;font-variant-numeric:tabular-nums}
+.sidebar-chat-list{flex:1;overflow-y:auto;min-height:0}
+.sidebar-chat-list::-webkit-scrollbar{width:3px}
+.sidebar-chat-list::-webkit-scrollbar-thumb{background:var(--border)}
+.chi{padding:6px 12px 6px 16px;cursor:pointer;border-left:2px solid transparent;display:flex;align-items:center;gap:4px;transition:all .1s}
+.chi:hover{background:var(--surf2)}
+.chi:hover .chi-del{opacity:1}
+.chi.active-chat{border-left-color:var(--text);background:var(--surf2)}
+.chi-title{font-size:11px;color:var(--muted2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;line-height:1.3}
+.chi:hover .chi-title,.chi.active-chat .chi-title{color:var(--text)}
+.chi-del{opacity:0;font-size:13px;color:var(--muted);background:transparent;border:none;cursor:pointer;flex-shrink:0;padding:0 2px;line-height:1;transition:opacity .12s}
+.chi-del:hover{color:var(--text)}
+.chat-time-grp{padding:8px 16px 3px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.sidebar-bottom{padding:16px;border-top:1px solid var(--border);flex-shrink:0}
+.sidebar-store{font-size:10px;color:var(--muted);line-height:1.8}
+.sidebar-store b{color:var(--muted2);font-weight:500}
+
+/* ── MAIN (non-home pages) ── */
+.main{flex:1;overflow-y:auto;display:flex;flex-direction:column}
+.main::-webkit-scrollbar{width:3px}
+.main::-webkit-scrollbar-thumb{background:var(--border)}
+
+/* ── PAGE ── */
+.page{padding:24px;display:none;flex-direction:column;gap:18px;flex:1}
+.page.active{display:flex}
+
+/* ── HOME PAGE ── */
+#page-home{padding:0!important;flex-direction:row!important;overflow:hidden!important;flex:1}
+
+/* Center column */
+.home-center{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+
+/* Welcome view */
+.welcome-view{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 32px 24px;gap:36px;transition:opacity .25s}
+.welcome-hello{font-size:34px;font-weight:600;letter-spacing:-.03em;color:var(--text);text-align:center}
+.welcome-tagline{font-size:15px;color:var(--muted2);margin-top:6px;text-align:center}
+.welcome-meta{font-size:11px;color:var(--muted);margin-top:4px;text-align:center;letter-spacing:.02em}
+.quick-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;width:100%;max-width:520px}
+.qtile{background:var(--surf);border:1px solid var(--border);padding:16px 18px;cursor:pointer;transition:border-color .12s,background .12s;border-radius:6px}
+.qtile:hover{border-color:var(--muted2);background:var(--surf2)}
+.qtile-title{font-size:12px;font-weight:600;margin-bottom:4px;color:var(--text)}
+.qtile-desc{font-size:11px;color:var(--muted);line-height:1.4}
+
+/* Chat view */
+.home-chat-view{flex:1;overflow:hidden;display:none;flex-direction:column}
+.home-chat-messages{flex:1;overflow-y:auto;padding:28px 0;display:flex;flex-direction:column;gap:20px;max-width:700px;width:100%;margin:0 auto;padding-left:28px;padding-right:28px}
+.home-chat-messages::-webkit-scrollbar{width:3px}
+.home-chat-messages::-webkit-scrollbar-thumb{background:var(--border)}
+.hmsg{line-height:1.65;font-size:14px;word-break:break-word}
+.hmsg.user{align-self:flex-end;background:var(--surf3);border:1px solid var(--border);padding:10px 16px;border-radius:18px 18px 4px 18px;max-width:72%;font-size:13px}
+.hmsg.ai{align-self:flex-start;color:var(--text);max-width:90%}
+.hmsg.ai strong{font-weight:600}
+.hmsg.ai code{background:var(--surf3);padding:1px 5px;border-radius:2px;font-size:12px;font-family:monospace}
+.hmsg.ai table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12px}
+.hmsg.ai th{padding:6px 10px;font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);border-bottom:1px solid var(--border);text-align:left;font-weight:500}
+.hmsg.ai td{padding:7px 10px;border-bottom:1px solid var(--border2);font-size:12px}
+.hmsg.ai tr:last-child td{border-bottom:none}
+.hmsg.thinking{color:var(--muted);font-style:italic;align-self:flex-start}
+.hmsg.system{align-self:center;color:var(--muted);font-size:11px}
+
+/* Input bar */
+.home-input-wrap{padding:12px 20px 20px;flex-shrink:0;max-width:700px;width:100%;margin:0 auto;align-self:stretch}
+.home-input-bar{display:flex;align-items:flex-end;background:var(--surf2);border:1px solid var(--border);border-radius:18px;padding:10px 10px 10px 18px;gap:8px;transition:border-color .15s}
+.home-input-bar:focus-within{border-color:var(--muted2)}
+.home-input{flex:1;background:transparent;border:none;outline:none;color:var(--text);font-family:inherit;font-size:14px;resize:none;line-height:1.5;max-height:160px;min-height:26px;padding:2px 0}
+.home-input::placeholder{color:var(--muted)}
+.home-send{background:var(--text);color:var(--bg);border:none;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:opacity .15s;line-height:1}
+.home-send:hover{opacity:.8}
+.home-send:disabled{opacity:.2;cursor:default}
+.home-new-chat{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:var(--radius);padding:4px 10px;cursor:pointer;font-size:10px;font-family:inherit;letter-spacing:.04em;text-transform:uppercase;transition:all .12s;display:none}
+.home-new-chat:hover{border-color:var(--muted2);color:var(--text)}
+
+/* ── SUGGESTIONS PANEL ── */
+.home-sugg{width:256px;border-left:1px solid var(--border);flex-shrink:0;display:flex;flex-direction:column;overflow:hidden;background:var(--surf)}
+.sugg-hdr{padding:16px 16px 10px;border-bottom:1px solid var(--border);flex-shrink:0}
+.sugg-hdr-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text)}
+.sugg-hdr-sub{font-size:10px;color:var(--muted);margin-top:3px;line-height:1.4}
+.sugg-scroll{flex:1;overflow-y:auto;padding:12px 12px 16px}
+.sugg-scroll::-webkit-scrollbar{width:3px}
+.sugg-scroll::-webkit-scrollbar-thumb{background:var(--border)}
+.sugg-group-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:10px 4px 6px}
+.sugg-pill{font-size:11px;padding:9px 12px;border:1px solid var(--border);cursor:pointer;color:var(--muted2);transition:all .1s;border-radius:6px;line-height:1.3;margin-bottom:5px;background:transparent}
+.sugg-pill:hover{border-color:var(--muted2);color:var(--text);background:var(--surf2)}
+.sugg-empty-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:16px;text-align:center;color:var(--muted);font-size:10px;line-height:1.6;border-top:1px solid var(--border);margin-top:auto}
+
+/* ── STAT GRID (other pages) ── */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.stat-card{background:var(--surf);padding:20px 18px}
+.stat-label{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px;font-weight:500}
+.stat-val{font-size:26px;font-weight:700;line-height:1;margin-bottom:4px;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--text)}
+.stat-val.gold,.stat-val.gr,.stat-val.re,.stat-val.bl{color:var(--text)}
+.stat-delta{font-size:10px;color:var(--muted)}
+.stat-delta.up,.stat-delta.dn{color:var(--muted2)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.three-col{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+
+/* ── CARDS ── */
+.card{background:var(--surf);border:1px solid var(--border);overflow:hidden}
+.card-hdr{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--border)}
+.card-ttl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted2)}
+.card-tag{font-size:10px;color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
+.card-tag.urgent{color:var(--red)}
+
+/* ── TABLE ── */
+table{width:100%;border-collapse:collapse}
+th{padding:8px 14px;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border-bottom:1px solid var(--border);font-weight:500;text-align:left}
+td{padding:10px 14px;border-bottom:1px solid var(--border2);font-size:12px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--surf2)}
+.scrollable{max-height:340px;overflow-y:auto}
+.scrollable::-webkit-scrollbar{width:3px}
+.scrollable::-webkit-scrollbar-thumb{background:var(--border)}
+.onum{font-weight:600;color:var(--text);font-size:12px;font-variant-numeric:tabular-nums}
+.amount{font-variant-numeric:tabular-nums;font-weight:500}
+.badge{display:inline-block;padding:2px 7px;border-radius:2px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;border:1px solid var(--border)}
+.b-unf{background:transparent;color:var(--muted2)}
+.b-ful{background:var(--surf2);color:var(--text)}
+.b-par{background:transparent;color:var(--muted)}
+
+/* ── BAR CHART ── */
+.bar-row{display:flex;align-items:center;gap:10px;padding:9px 16px;border-bottom:1px solid var(--border2)}
+.bar-row:last-child{border-bottom:none}
+.bar-label{font-size:11px;width:140px;flex-shrink:0;color:var(--muted2)}
+.bar-track{flex:1;height:1px;background:var(--surf3);overflow:hidden}
+.bar-fill{height:100%;transition:width .6s ease;background:var(--muted2)}
+.bar-num{font-size:11px;font-weight:600;color:var(--text);width:24px;text-align:right;font-variant-numeric:tabular-nums}
+
+/* ── TABS ── */
+.tabs{display:flex;border-bottom:1px solid var(--border)}
+.tab{padding:9px 16px;font-size:11px;font-weight:400;color:var(--muted);cursor:pointer;border-bottom:1px solid transparent;transition:color .1s;user-select:none}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--text);border-bottom-color:var(--text);font-weight:500}
+.tab-pane{display:none}.tab-pane.active{display:block}
+
+/* ── ALERTS ── */
+.alert-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border2)}
+.alert-item:last-child{border-bottom:none}
+.alert-body{flex:1}
+.alert-title{font-size:12px;font-weight:500}
+.alert-sub{font-size:10px;color:var(--muted)}
+.alert-days{font-size:11px;font-weight:700;color:var(--red);font-variant-numeric:tabular-nums}
+
+/* ── CARRIER PAGE ── */
+.carrier-card{background:var(--surf);border:1px solid var(--border);overflow:hidden}
+.carrier-head{display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid var(--border)}
+.carrier-name-big{font-size:14px;font-weight:700;letter-spacing:.02em;color:var(--text)}
+.carrier-region{font-size:10px;color:var(--muted);margin-top:2px}
+.carrier-pills{display:flex;gap:5px;flex-wrap:wrap;padding:10px 20px;border-bottom:1px solid var(--border)}
+.pill{font-size:10px;padding:2px 8px;border-radius:2px;border:1px solid var(--border);color:var(--muted)}
+.carrier-stats{display:flex}
+.carrier-stat{flex:1;padding:12px 20px;border-right:1px solid var(--border);text-align:center}
+.carrier-stat:last-child{border-right:none}
+.cs-num{font-size:20px;font-weight:700;margin-bottom:2px;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--text)}
+.cs-lbl{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* ── TRACK LINK ── */
+.tlink{color:var(--muted2);text-decoration:none;font-size:11px}
+.tlink:hover{color:var(--text);text-decoration:underline}
+
+/* ── EMPTY / LOADING ── */
+.empty{padding:32px;text-align:center;color:var(--muted);font-size:12px}
+.loading{display:flex;align-items:center;justify-content:center;padding:32px;gap:8px;color:var(--muted)}
+.spinner{width:12px;height:12px;border:1px solid var(--border);border-top-color:var(--muted2);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── GH CARRIER TABS ── */
+.gh-tabbar{display:flex;border-bottom:1px solid var(--border);background:var(--surf);padding:0 16px;overflow-x:auto;flex-shrink:0}
+.gh-tabbar::-webkit-scrollbar{height:0}
+.gh-tab{display:flex;align-items:center;gap:6px;padding:10px 12px;font-size:11px;font-weight:400;color:var(--muted);cursor:pointer;border-bottom:1px solid transparent;margin-bottom:-1px;transition:color .1s;user-select:none;white-space:nowrap;flex-shrink:0}
+.gh-tab:hover{color:var(--text)}
+.gh-tab.active{color:var(--text);border-bottom-color:var(--text);font-weight:500}
+.gh-count{font-size:10px;background:var(--surf3);border:1px solid var(--border);padding:0 5px;border-radius:2px;font-weight:500;min-width:18px;text-align:center;font-variant-numeric:tabular-nums}
+
+/* ── PILL FILTER ── */
+.pill-filter{display:flex;gap:5px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--border);align-items:center}
+.filter-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);flex-shrink:0;margin-right:2px}
+.filter-pill{padding:2px 9px;border-radius:2px;border:1px solid var(--border);font-size:10px;cursor:pointer;color:var(--muted);background:transparent;transition:all .1s;user-select:none;white-space:nowrap}
+.filter-pill:hover{border-color:var(--muted2);color:var(--text)}
+.filter-pill.active{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
+
+/* ── CONTINENT SECTIONS ── */
+.continent-section{border-bottom:1px solid var(--border)}
+.continent-section:last-child{border-bottom:none}
+.continent-hdr{display:flex;align-items:center;gap:8px;padding:8px 16px;cursor:pointer;user-select:none;background:var(--surf2);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);transition:color .1s}
+.continent-hdr:hover{color:var(--text)}
+.continent-arrow{font-size:8px;transition:transform .2s;display:inline-block;flex-shrink:0}
+.continent-hdr.collapsed .continent-arrow{transform:rotate(-90deg)}
+.continent-count{margin-left:auto;font-size:10px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.continent-hdr.collapsed + .continent-body{display:none}
+
+/* ── TRACKING PAGE ── */
+.trk-page-wrap{display:flex;flex-direction:column;height:100%;overflow:hidden}
+.trk-main{flex:1;overflow-y:auto;display:flex;flex-direction:column}
+.trk-main::-webkit-scrollbar{width:3px}
+.trk-main::-webkit-scrollbar-thumb{background:var(--border)}
+.trk-empty{padding:48px;text-align:center;color:var(--muted);font-size:12px}
+.trk-summary-bar{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--border)}
+.track-row{padding:14px 16px;border-bottom:1px solid var(--border2)}
+.track-row:last-child{border-bottom:none}
+.track-row:hover{background:var(--surf2)}
+.track-top{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.track-onum{font-weight:700;color:var(--text);font-size:12px;flex-shrink:0;font-variant-numeric:tabular-nums}
+.track-sep{color:var(--border);font-size:12px}
+.track-name{font-size:12px;color:var(--text)}
+.track-dest{font-size:11px;color:var(--muted2)}
+.track-meta{margin-left:auto;font-size:10px;color:var(--muted);text-align:right;line-height:1.6}
+.tl{display:flex;align-items:center}
+.tl-node{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:60px}
+.tl-dot{width:11px;height:11px;border-radius:50%;border:1px solid var(--border);background:var(--surf2);display:flex;align-items:center;justify-content:center;font-size:6px;font-weight:700;transition:all .3s}
+.tl-dot.done{border-color:var(--muted2);background:var(--muted2);color:var(--bg)}
+.tl-dot.active{border-color:var(--text);background:var(--surf)}
+.tl-lbl{font-size:8px;color:var(--muted);margin-top:4px;text-align:center;line-height:1.2;white-space:nowrap}
+.tl-lbl.done{color:var(--muted2)}
+.tl-lbl.active{color:var(--text)}
+.tl-line{flex:1;height:1px;background:var(--border2);margin-bottom:18px;transition:background .3s}
+.tl-line.done{background:var(--muted2)}
+.stage-badge{display:inline-block;padding:1px 7px;border-radius:2px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-left:4px;border:1px solid var(--border);background:transparent;color:var(--muted2)}
+.s0{color:var(--muted);border-color:var(--border2)}
+.s1{color:var(--muted2)}
+.s2{color:var(--muted2);border-color:var(--border)}
+.s3{color:var(--text);border-color:var(--muted2)}
+.s4{color:var(--text);border-color:var(--text);background:var(--surf3)}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <div>
+      <div class="brand">Less &amp; Romance</div>
+      <div class="brand-sub">fabricfleet ops</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <button class="home-new-chat" id="home-new-chat" onclick="resetHomeChat()">New chat</button>
+    <button class="theme-btn" id="theme-toggle" onclick="toggleTheme()">Light</button>
+    <div class="live-dot"></div>
+    <span class="topbar-time" id="clock"></span>
+    <span id="last-upd" style="color:var(--muted)">—</span>
+  </div>
+</div>
+
+<!-- APP BODY -->
+<div class="app-body">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-section">Navigation</div>
+    <div class="nav-item active" onclick="goTo('home',this)">Chat</div>
+    <div class="nav-item" onclick="goTo('orders',this)">
+      Orders
+      <span class="nav-badge" id="nav-unfulfilled">—</span>
+    </div>
+    <div class="nav-item" onclick="goTo('carriers',this)">Carriers</div>
+    <div class="nav-item" onclick="goTo('tracking-full',this)">Tracking</div>
+    <div class="sidebar-section" style="margin-top:8px">Channels</div>
+    <div class="nav-item" onclick="goTo('slack',this)">Slack</div>
+    <div class="nav-item" onclick="goTo('analytics',this)">Analytics</div>
+    <div class="sidebar-section" style="margin-top:8px">Chats</div>
+    <div class="sidebar-chat-list" id="chat-history-list">
+      <div style="padding:10px 16px;font-size:10px;color:var(--muted)">No chats yet</div>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="sidebar-store">
+        <b>bt0wj0-5j.myshopify.com</b><br>
+        Tuzla OSB · Mesut Bey<br>
+        +90 543 145 48 60
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN WRAPPER (non-home pages) -->
+  <div class="main" id="main-wrap" style="display:none">
+
+    <!-- ORDERS PAGE -->
+    <div id="page-orders" class="page active">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+        <div style="font-size:17px;font-weight:600;letter-spacing:-.01em">Orders</div>
+        <button onclick="loadOrders()" style="background:transparent;border:1px solid var(--border);color:var(--muted2);padding:5px 14px;border-radius:var(--radius);cursor:pointer;font-family:inherit;font-size:11px;letter-spacing:.04em;text-transform:uppercase">Refresh</button>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card"><div class="stat-label">Total Orders</div><div class="stat-val" id="o-total">—</div></div>
+        <div class="stat-card"><div class="stat-label">Unfulfilled (intl)</div><div class="stat-val" id="o-unf">—</div></div>
+        <div class="stat-card"><div class="stat-label">Today</div><div class="stat-val" id="o-today">—</div></div>
+        <div class="stat-card"><div class="stat-label">Returning Customers</div><div class="stat-val" id="o-ret">—</div></div>
+      </div>
+      <div class="card">
+        <div class="tabs">
+          <div class="tab active" onclick="switchOrderTab('recent',this)">Recent</div>
+          <div class="tab" onclick="switchOrderTab('queue',this)">Fulfillment Queue</div>
+          <div class="tab" onclick="switchOrderTab('fulfilled',this)">Fulfilled Intl</div>
+          <div class="tab" onclick="switchOrderTab('tracking',this)">Parcel Tracker</div>
+        </div>
+        <div id="ot-recent" class="tab-pane active">
+          <div class="scrollable">
+            <div class="loading" id="o-loading"><div class="spinner"></div> Loading…</div>
+            <table id="o-table-recent" style="display:none">
+              <thead><tr><th>Order</th><th>Date</th><th>Customer</th><th>Destination</th><th>Carrier</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody id="o-tbody-recent"></tbody>
+            </table>
+          </div>
+        </div>
+        <div id="ot-queue" class="tab-pane">
+          <div class="scrollable">
+            <table id="o-table-queue" style="display:none">
+              <thead><tr><th>Order</th><th>Ordered</th><th>Customer</th><th>Destination</th><th>Carrier</th><th>Amount</th></tr></thead>
+              <tbody id="o-tbody-queue"></tbody>
+            </table>
+          </div>
+        </div>
+        <div id="ot-fulfilled" class="tab-pane">
+          <div class="loading" id="o-ful-loading"><div class="spinner"></div> Loading fulfilled orders…</div>
+          <div id="o-ful-carriers"></div>
+        </div>
+        <div id="ot-tracking" class="tab-pane">
+          <div class="loading" id="o-trk-loading"><div class="spinner"></div> Loading shipments…</div>
+          <div id="o-trk-summary" style="display:none;padding:10px 16px;border-bottom:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap"></div>
+          <div class="scrollable" id="o-trk-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARRIERS PAGE -->
+    <div id="page-carriers" class="page" style="display:none">
+      <div style="font-size:17px;font-weight:600;letter-spacing:-.01em;margin-bottom:2px">Carriers &amp; Shipping</div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:8px">Live queue per carrier · Transit tracking</div>
+      <div class="loading" id="car-loading"><div class="spinner"></div> Loading carrier data…</div>
+      <div id="car-content" style="display:flex;flex-direction:column;gap:16px"></div>
+    </div>
+
+    <!-- FULL TRACKING PAGE -->
+    <div id="page-tracking-full" class="page" style="display:none;padding:0;overflow:hidden">
+      <div class="trk-page-wrap">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);flex-shrink:0">
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-.01em">Parcel Tracking</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px">Live shipment status · sorted by days in transit</div>
+          </div>
+          <button onclick="loadFullTracking(true)" style="background:transparent;border:1px solid var(--border);color:var(--muted2);padding:5px 14px;border-radius:var(--radius);cursor:pointer;font-family:inherit;font-size:11px;letter-spacing:.04em;text-transform:uppercase">Refresh</button>
+        </div>
+        <div class="gh-tabbar" id="trk-carrier-tabbar">
+          <div class="gh-tab active" data-carrier="Aramex" onclick="switchTrkCarrier('Aramex',this)">Aramex <span class="gh-count" id="trk-cnt-Aramex">—</span></div>
+          <div class="gh-tab" data-carrier="GLS"   onclick="switchTrkCarrier('GLS',this)">GLS <span class="gh-count" id="trk-cnt-GLS">—</span></div>
+          <div class="gh-tab" data-carrier="UPS"   onclick="switchTrkCarrier('UPS',this)">UPS <span class="gh-count" id="trk-cnt-UPS">—</span></div>
+          <div class="gh-tab" data-carrier="DHL"   onclick="switchTrkCarrier('DHL',this)">DHL <span class="gh-count" id="trk-cnt-DHL">—</span></div>
+          <div class="gh-tab" data-carrier="Other" onclick="switchTrkCarrier('Other',this)">Other <span class="gh-count" id="trk-cnt-Other">—</span></div>
+        </div>
+        <div class="loading" id="trk-full-loading" style="padding:40px"><div class="spinner"></div> Loading…</div>
+        <div id="trk-full-view" style="display:none;flex-direction:column;flex:1;overflow:hidden">
+          <div class="trk-summary-bar" id="trk-stage-bar"></div>
+          <div class="pill-filter" id="trk-country-pills"></div>
+          <div class="trk-main" id="trk-continents"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALYTICS PAGE -->
+    <div id="page-analytics" class="page" style="display:none">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+        <div>
+          <div style="font-size:17px;font-weight:600;letter-spacing:-.01em">Analytics</div>
+          <div style="font-size:11px;color:var(--muted)" id="an-date">Today</div>
+        </div>
+        <button onclick="loadAnalytics(true)" style="background:transparent;border:1px solid var(--border);color:var(--muted2);padding:5px 14px;border-radius:var(--radius);cursor:pointer;font-family:inherit;font-size:11px;letter-spacing:.04em;text-transform:uppercase">Refresh</button>
+      </div>
+      <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="stat-card"><div class="stat-label">Today's Orders</div><div class="stat-val" id="an-orders">—</div></div>
+        <div class="stat-card"><div class="stat-label">Top Color</div><div class="stat-val" id="an-top-color">—</div></div>
+        <div class="stat-card"><div class="stat-label">Top Country</div><div class="stat-val" id="an-top-country">—</div></div>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <div class="card-hdr"><span class="card-ttl">Colors Sold Today</span><span class="card-tag" id="an-color-total">—</span></div>
+          <div id="an-colors"><div class="loading"><div class="spinner"></div></div></div>
+        </div>
+        <div class="card">
+          <div class="card-hdr"><span class="card-ttl">Orders by Country</span></div>
+          <div id="an-countries"><div class="loading"><div class="spinner"></div></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-hdr"><span class="card-ttl">Color × Country Breakdown</span><span class="card-tag">click a color to filter</span></div>
+        <div id="an-cxc"><div class="loading"><div class="spinner"></div></div></div>
+      </div>
+    </div>
+
+    <!-- SLACK PAGE -->
+    <div id="page-slack" class="page" style="display:none">
+      <div style="font-size:17px;font-weight:600;letter-spacing:-.01em;margin-bottom:16px">Slack — All Channels</div>
+      <div class="card">
+        <div class="loading" id="slack-loading"><div class="spinner"></div> Loading messages…</div>
+        <div id="slack-body"></div>
+      </div>
+    </div>
+
+  </div><!-- /main-wrap -->
+
+  <!-- HOME PAGE (chat + suggestions) -->
+  <div id="page-home" style="display:flex;flex:1;overflow:hidden;flex-direction:row">
+
+    <!-- Center -->
+    <div class="home-center">
+
+      <!-- Welcome view -->
+      <div class="welcome-view" id="welcome-view">
+        <div>
+          <div class="welcome-hello" id="greeting-text">Good morning, Akif</div>
+          <div class="welcome-tagline">How can I help you today?</div>
+          <div class="welcome-meta" id="greeting-meta">Loading…</div>
+        </div>
+        <div class="quick-tiles">
+          <div class="qtile" onclick="sendHomePrompt('Show me all unfulfilled orders that need to ship, grouped by carrier')">
+            <div class="qtile-title">Unfulfilled Orders</div>
+            <div class="qtile-desc">Orders waiting to ship, by carrier</div>
+          </div>
+          <div class="qtile" onclick="sendHomePrompt('What is today\'s revenue and how many orders came in today?')">
+            <div class="qtile-title">Today's Revenue</div>
+            <div class="qtile-desc">Orders and revenue summary for today</div>
+          </div>
+          <div class="qtile" onclick="sendHomePrompt('Show all shipments currently in transit, grouped by carrier, with days in transit')">
+            <div class="qtile-title">Shipments in Transit</div>
+            <div class="qtile-desc">Live transit status by carrier</div>
+          </div>
+          <div class="qtile" onclick="sendHomePrompt('Are there any orders that have been waiting more than 2 days and need urgent attention?')">
+            <div class="qtile-title">Overdue Alerts</div>
+            <div class="qtile-desc">Orders needing immediate action</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat view (shown after first message) -->
+      <div class="home-chat-view" id="home-chat-view">
+        <div class="home-chat-messages" id="home-chat-messages"></div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="home-input-wrap">
+        <div class="home-input-bar">
+          <textarea class="home-input" id="home-input" placeholder="Ask about orders, shipments, revenue…" rows="1"
+            onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendHomeChat()}"></textarea>
+          <button class="home-send" id="home-send" onclick="sendHomeChat()">↑</button>
+        </div>
+      </div>
+
+    </div><!-- /home-center -->
+
+    <!-- Suggestions panel -->
+    <div class="home-sugg">
+      <div class="sugg-hdr">
+        <div class="sugg-hdr-title">Suggested Actions</div>
+        <div class="sugg-hdr-sub" id="sugg-hdr-sub">Ask a question to get started</div>
+      </div>
+      <div class="sugg-scroll">
+        <div id="sugg-initial">
+          <div class="sugg-group-label">Quick Asks</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('How many unfulfilled orders do we have right now?')">How many unfulfilled orders?</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('What is today\'s total revenue?')">Today's total revenue</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Show the top 5 countries by number of unfulfilled orders')">Top countries by unfulfilled</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Which orders have been waiting more than 3 days to ship?')">Orders waiting 3+ days</div>
+          <div class="sugg-group-label" style="margin-top:14px">Carriers</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Show me the full Aramex fulfillment queue')">Aramex queue</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Show me the GLS shipments currently in transit')">GLS in transit</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Compare unfulfilled orders across all carriers')">Carrier breakdown</div>
+          <div class="sugg-group-label" style="margin-top:14px">Products</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('What are the most popular products sold this week?')">Top products this week</div>
+          <div class="sugg-pill" onclick="sendHomePrompt('Show me a color breakdown of today\'s orders')">Colors sold today</div>
+        </div>
+        <div id="sugg-dynamic" style="display:none">
+          <!-- populated after each AI response -->
+        </div>
+      </div>
+      <div class="sugg-empty-wrap" id="sugg-empty-wrap">
+        Ask about orders, shipments, or revenue to see actionable suggestions here.
+      </div>
+    </div>
+
+  </div><!-- /page-home -->
+
+</div><!-- /app-body -->
+
+<script>
+// ── STATE ─────────────────────────────────────────────────────────────────
+let _overview      = null;
+let _chatHistory   = [];
+let _homeChatActive = false;
+let _chatId        = null;
+
+const FLAGS = {"United Arab Emirates":"🇦🇪","Saudi Arabia":"🇸🇦","Qatar":"🇶🇦","Kuwait":"🇰🇼","Bahrain":"🇧🇭","Oman":"🇴🇲","Germany":"🇩🇪","France":"🇫🇷","Italy":"🇮🇹","United Kingdom":"🇬🇧","United States":"🇺🇸","Turkey":"🇹🇷","Portugal":"🇵🇹","Spain":"🇪🇸","Denmark":"🇩🇰","Netherlands":"🇳🇱","Croatia":"🇭🇷","Latvia":"🇱🇻","Belgium":"🇧🇪","Sweden":"🇸🇪","Norway":"🇳🇴","Finland":"🇫🇮","Greece":"🇬🇷","Poland":"🇵🇱","Czech Republic":"🇨🇿","Slovakia":"🇸🇰","Austria":"🇦🇹","Switzerland":"🇨🇭","Romania":"🇷🇴","Hungary":"🇭🇺","Canada":"🇨🇦","Australia":"🇦🇺","Japan":"🇯🇵","Singapore":"🇸🇬","Egypt":"🇪🇬","Lebanon":"🇱🇧","Jordan":"🇯🇴","Iraq":"🇮🇶","Pakistan":"🇵🇰","Estonia":"🇪🇪","Lithuania":"🇱🇹","Luxembourg":"🇱🇺","Malta":"🇲🇹","Bulgaria":"🇧🇬","Serbia":"🇷🇸","Ireland":"🇮🇪"};
+
+function flag(c){return FLAGS[c]||""}
+function fmt(n){return parseFloat(n||0).toLocaleString("en",{minimumFractionDigits:0,maximumFractionDigits:0})}
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function statusBadge(s){
+  if(!s||s==="unfulfilled") return `<span class="badge b-unf">Unfulfilled</span>`;
+  if(s==="fulfilled")       return `<span class="badge b-ful">Fulfilled</span>`;
+  if(s==="partial")         return `<span class="badge b-par">Partial</span>`;
+  return `<span class="badge">${s}</span>`;
+}
+function carrierBadge(c){
+  return `<span style="font-size:11px;font-weight:600;color:var(--muted2)">${c||"—"}</span>`;
+}
+
+// ── CLOCK ─────────────────────────────────────────────────────────────────
+function updateClock(){
+  const now = new Date();
+  document.getElementById("clock").textContent =
+    now.toLocaleTimeString("en-GB",{timeZone:"Europe/Istanbul",hour:"2-digit",minute:"2-digit",second:"2-digit"}) + " IST";
+}
+setInterval(updateClock,1000); updateClock();
+
+// ── GREETING ──────────────────────────────────────────────────────────────
+function setGreeting(){
+  const now = new Date();
+  const h = parseInt(new Intl.DateTimeFormat("en",{hour:"numeric",hour12:false,timeZone:"Europe/Istanbul"}).format(now));
+  const g = h<12?"Good morning":h<17?"Good afternoon":"Good evening";
+  document.getElementById("greeting-text").textContent = `${g}, Akif`;
+}
+setGreeting();
+
+// ── NAVIGATION ────────────────────────────────────────────────────────────
+let _currentPage = "home";
+
+function goTo(page, el){
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
+  el.classList.add("active");
+  _currentPage = page;
+
+  if(page === "home"){
+    document.getElementById("page-home").style.display = "flex";
+    document.getElementById("main-wrap").style.display = "none";
+    document.getElementById("home-new-chat").style.display = _homeChatActive ? "block" : "none";
+    return;
+  }
+
+  document.getElementById("page-home").style.display = "none";
+  document.getElementById("main-wrap").style.display = "flex";
+  document.getElementById("home-new-chat").style.display = "none";
+
+  // hide all pages in main
+  document.querySelectorAll("#main-wrap .page").forEach(p=>{p.style.display="none"});
+  const target = document.getElementById("page-"+page);
+  if(target){ target.style.display = "flex"; }
+
+  if(page==="orders"    && !window._ordersLoaded)      loadOrders();
+  if(page==="carriers"  && !window._carriersLoaded)    loadCarriers();
+  if(page==="slack"     && !window._slackLoaded)       loadSlack();
+  if(page==="analytics" && !window._analyticsLoaded)   { window._analyticsLoaded=true; loadAnalytics(); }
+  if(page==="tracking-full" && !window._trkFullLoaded) { window._trkFullLoaded=true; loadFullTracking(); }
+}
+
+// ── HOME CHAT ─────────────────────────────────────────────────────────────
+function transitionToChat(){
+  if(_homeChatActive) return;
+  _homeChatActive = true;
+  document.getElementById("welcome-view").style.display = "none";
+  document.getElementById("home-chat-view").style.display = "flex";
+  document.getElementById("home-new-chat").style.display = "block";
+  document.getElementById("sugg-empty-wrap").style.display = "none";
+}
+
+async function autoSaveChat(){
+  if(!_chatHistory.length) return;
+  try{
+    const body = {messages:_chatHistory};
+    if(_chatId) body.id = _chatId;
+    const r = await fetch("/api/chats",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+    const d = await r.json();
+    if(d.id && d.id !== _chatId){ _chatId = d.id; }
+    loadChatList();
+  }catch(e){}
+}
+
+async function resetHomeChat(){
+  await autoSaveChat();
+  _homeChatActive = false;
+  _chatHistory = [];
+  _chatId = null;
+  document.getElementById("home-chat-messages").innerHTML = "";
+  document.getElementById("welcome-view").style.display = "flex";
+  document.getElementById("home-chat-view").style.display = "none";
+  document.getElementById("home-new-chat").style.display = "none";
+  document.getElementById("sugg-initial").style.display = "block";
+  document.getElementById("sugg-dynamic").style.display = "none";
+  document.getElementById("sugg-empty-wrap").style.display = "flex";
+  document.getElementById("sugg-hdr-sub").textContent = "Ask a question to get started";
+  document.querySelectorAll(".chi").forEach(el=>el.classList.remove("active-chat"));
+}
+
+async function loadChatList(){
+  try{
+    const r = await fetch("/api/chats");
+    const d = await r.json();
+    renderChatList(d.chats || []);
+  }catch(e){}
+}
+
+function chatAgeGroup(isoStr){
+  const now = new Date(), d = new Date(isoStr);
+  const diff = Math.floor((now - d)/86400000);
+  if(d.toDateString() === now.toDateString()) return "today";
+  if(diff === 1) return "yesterday";
+  if(diff <= 7)  return "week";
+  if(diff <= 30) return "month";
+  return "older";
+}
+
+function renderChatList(chats){
+  if(!chats.length){
+    document.getElementById("chat-history-list").innerHTML=
+      `<div style="padding:10px 16px;font-size:10px;color:var(--muted)">No chats yet</div>`;
+    return;
+  }
+  const groups={today:[],yesterday:[],week:[],month:[],older:[]};
+  for(const c of chats) groups[chatAgeGroup(c.created_at)].push(c);
+  const labels={today:"Today",yesterday:"Yesterday",week:"Last 7 days",month:"Last month",older:"Older"};
+  let html="";
+  for(const key of ["today","yesterday","week","month","older"]){
+    if(!groups[key].length) continue;
+    html+=`<div class="chat-time-grp">${labels[key]}</div>`;
+    for(const c of groups[key]){
+      const active = c.id===_chatId?" active-chat":"";
+      html+=`<div class="chi${active}" id="chi-${c.id}" onclick="openChat('${c.id}')">
+        <span class="chi-title" title="${esc(c.title)}">${esc(c.title)}</span>
+        <button class="chi-del" onclick="event.stopPropagation();deleteChatItem('${c.id}')" title="Delete">×</button>
+      </div>`;
+    }
+  }
+  document.getElementById("chat-history-list").innerHTML = html;
+}
+
+async function openChat(id){
+  if(_chatHistory.length && !_chatId) await autoSaveChat();
+  const r = await fetch("/api/chats/"+id);
+  const c = await r.json();
+  if(c.error) return;
+  _chatHistory = c.messages;
+  _chatId = id;
+  // navigate to home
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
+  document.querySelector(".nav-item[onclick*=\"'home'\"]").classList.add("active");
+  document.getElementById("page-home").style.display = "flex";
+  document.getElementById("main-wrap").style.display = "none";
+  document.getElementById("home-new-chat").style.display = "block";
+  // show chat view
+  _homeChatActive = false; // allow transitionToChat to run
+  transitionToChat();
+  const wrap = document.getElementById("home-chat-messages");
+  wrap.innerHTML = "";
+  for(const msg of c.messages){
+    const div = document.createElement("div");
+    div.className = "hmsg "+msg.role;
+    div.innerHTML = msg.role==="user" ? esc(msg.content) : renderAI(msg.content);
+    wrap.appendChild(div);
+  }
+  wrap.scrollTop = wrap.scrollHeight;
+  document.querySelectorAll(".chi").forEach(el=>el.classList.remove("active-chat"));
+  const el = document.getElementById("chi-"+id);
+  if(el) el.classList.add("active-chat");
+}
+
+async function deleteChatItem(id){
+  await fetch("/api/chats/"+id, {method:"DELETE"});
+  if(_chatId===id){
+    _chatHistory=[];_chatId=null;_homeChatActive=false;
+    document.getElementById("home-chat-messages").innerHTML="";
+    document.getElementById("welcome-view").style.display="flex";
+    document.getElementById("home-chat-view").style.display="none";
+    document.getElementById("home-new-chat").style.display="none";
+  }
+  loadChatList();
+}
+
+function sendHomePrompt(text){
+  document.getElementById("home-input").value = text;
+  sendHomeChat();
+}
+
+function addHomeMsg(role, html){
+  const wrap = document.getElementById("home-chat-messages");
+  const div = document.createElement("div");
+  div.className = "hmsg " + role;
+  div.innerHTML = html;
+  wrap.appendChild(div);
+  wrap.scrollTop = wrap.scrollHeight;
+  return div;
+}
+
+function renderAI(text){
+  return esc(text)
+    .replace(/\n/g,"<br>")
+    .replace(/`([^`]+)`/g,"<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+    .replace(/\|(.+)\|/g, m => {
+      const cells = m.split("|").filter(c=>c.trim());
+      return "<br>" + cells.map(c=>`<span style="display:inline-block;padding:0 8px;border-right:1px solid var(--border)">${c.trim()}</span>`).join("") + "<br>";
+    });
+}
+
+function updateSuggestions(userText){
+  const t = userText.toLowerCase();
+  let groups = [];
+
+  if(t.includes("unfulfill") || t.includes("ship") || t.includes("queue") || t.includes("send")){
+    groups = [
+      {label:"Follow-up", pills:[
+        "Which country has the most unfulfilled orders?",
+        "What's the total value of all unfulfilled orders?",
+        "Show me just the Aramex queue",
+        "Which orders are waiting more than 2 days?",
+      ]}
+    ];
+  } else if(t.includes("revenue") || t.includes("today") || t.includes("sales") || t.includes("order") && t.includes("count")){
+    groups = [
+      {label:"Follow-up", pills:[
+        "Compare today's revenue to yesterday",
+        "Which country ordered the most today?",
+        "What's the best selling product today?",
+        "Show me returning customers today",
+      ]}
+    ];
+  } else if(t.includes("transit") || t.includes("track") || t.includes("carrier") || t.includes("aramex") || t.includes("gls") || t.includes("dhl") || t.includes("ups")){
+    groups = [
+      {label:"Follow-up", pills:[
+        "Which shipments have been in transit the longest?",
+        "Are there any delayed or overdue shipments?",
+        "Show me shipments out for delivery today",
+        "Compare GLS vs Aramex transit times",
+      ]}
+    ];
+  } else if(t.includes("overdue") || t.includes("alert") || t.includes("urgent") || t.includes("wait")){
+    groups = [
+      {label:"Follow-up", pills:[
+        "Show me full details on the oldest order",
+        "How many are going to Gulf countries?",
+        "What's the total value of overdue orders?",
+        "Which carrier should handle these?",
+      ]}
+    ];
+  } else if(t.includes("product") || t.includes("color") || t.includes("sku") || t.includes("sell")){
+    groups = [
+      {label:"Follow-up", pills:[
+        "Which color sold the most this week?",
+        "Show color breakdown by country",
+        "What's the best selling SKU?",
+        "Show products going to Europe",
+      ]}
+    ];
+  } else {
+    groups = [
+      {label:"Suggestions", pills:[
+        "Show all unfulfilled orders",
+        "What's today's revenue?",
+        "Show shipments in transit",
+        "Any overdue orders?",
+      ]}
+    ];
+  }
+
+  const html = groups.map(g=>`
+    <div class="sugg-group-label">${g.label}</div>
+    ${g.pills.map(p=>`<div class="sugg-pill" onclick="sendHomePrompt('${p.replace(/'/g,"\\'")}')">${p}</div>`).join("")}
+  `).join("");
+
+  document.getElementById("sugg-initial").style.display = "none";
+  document.getElementById("sugg-dynamic").innerHTML = html;
+  document.getElementById("sugg-dynamic").style.display = "block";
+  document.getElementById("sugg-hdr-sub").textContent = "Based on your question";
+}
+
+async function sendHomeChat(){
+  const input = document.getElementById("home-input");
+  const text = input.value.trim();
+  if(!text) return;
+
+  transitionToChat();
+
+  addHomeMsg("user", esc(text));
+  input.value = "";
+  input.style.height = "auto";
+
+  const sendBtn = document.getElementById("home-send");
+  sendBtn.disabled = true;
+
+  _chatHistory.push({role:"user", content: text});
+
+  const thinkingDiv = addHomeMsg("thinking", "Thinking…");
+
+  try{
+    const r = await fetch("/api/chat",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({messages: _chatHistory})
+    });
+    const d = await r.json();
+    thinkingDiv.remove();
+
+    if(d.error === "no_key"){
+      addHomeMsg("system","API key not configured. Add it in config.json.");
+    } else if(d.reply){
+      addHomeMsg("ai", renderAI(d.reply));
+      _chatHistory.push({role:"assistant", content: d.reply});
+      updateSuggestions(text);
+      autoSaveChat();
+    }
+  } catch(e){
+    thinkingDiv.innerHTML = "Error: " + esc(e.message);
+    thinkingDiv.className = "hmsg system";
+  }
+
+  sendBtn.disabled = false;
+  document.getElementById("home-chat-messages").scrollTop = 99999;
+}
+
+document.getElementById("home-input").addEventListener("input", function(){
+  this.style.height = "auto";
+  this.style.height = Math.min(this.scrollHeight, 160) + "px";
+});
+
+// ── THEME ─────────────────────────────────────────────────────────────────
+function toggleTheme(){
+  const isLight = document.documentElement.getAttribute("data-theme") === "light";
+  if(isLight){
+    document.documentElement.removeAttribute("data-theme");
+    document.getElementById("theme-toggle").textContent = "Light";
+  } else {
+    document.documentElement.setAttribute("data-theme","light");
+    document.getElementById("theme-toggle").textContent = "Dark";
+  }
+}
+
+// ── OVERVIEW (for other pages + meta line) ────────────────────────────────
+async function loadOverview(){
+  const r = await fetch("/api/overview");
+  const d = await r.json();
+  _overview = d;
+
+  document.getElementById("last-upd").textContent = "Updated " + d.last_updated;
+  document.getElementById("nav-unfulfilled").textContent = d.unfulfilled_outside_tr;
+
+  // welcome meta line
+  document.getElementById("greeting-meta").textContent =
+    `${d.unfulfilled_outside_tr} to ship · €${fmt(d.today_revenue)} today · ${d.today_orders} orders`;
+
+  // orders page stats
+  document.getElementById("o-total").textContent = d.total_orders;
+  document.getElementById("o-unf").textContent   = d.unfulfilled_outside_tr;
+  document.getElementById("o-today").textContent = d.today_orders;
+  document.getElementById("o-ret").textContent   = d.returning_customers;
+
+  // orders page tables
+  document.getElementById("o-loading").style.display = "none";
+  document.getElementById("o-table-recent").style.display = "table";
+  document.getElementById("o-tbody-recent").innerHTML = d.recent_orders.map(o=>`
+    <tr>
+      <td><span class="onum">#${o.number}</span></td>
+      <td>${o.date} <span style="color:var(--muted)">${o.time}</span></td>
+      <td>${esc(o.name)||"—"}</td>
+      <td>${flag(o.country)} ${o.city||o.country}</td>
+      <td>${carrierBadge(o.carrier)}</td>
+      <td class="amount">${o.currency} ${fmt(o.amount)}</td>
+      <td>${statusBadge(o.status)}</td>
+    </tr>`).join("");
+
+  document.getElementById("o-table-queue").style.display = "table";
+  document.getElementById("o-tbody-queue").innerHTML = d.unfulfilled_orders.map(o=>`
+    <tr>
+      <td><span class="onum">#${o.number}</span></td>
+      <td style="color:var(--muted)">${o.date}</td>
+      <td>${esc(o.name)||"—"}</td>
+      <td>${flag(o.country)} ${o.city||o.country}</td>
+      <td>${carrierBadge(o.carrier)}</td>
+      <td class="amount">${o.currency} ${fmt(o.amount)}</td>
+    </tr>`).join("");
+}
+
+// ── ORDERS PAGE ───────────────────────────────────────────────────────────
+function loadOrders(){ window._ordersLoaded = true; }
+
+function switchOrderTab(name, el){
+  document.querySelectorAll("#page-orders .tabs .tab").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll("#page-orders .tab-pane").forEach(p=>p.classList.remove("active"));
+  document.getElementById("ot-"+name).classList.add("active");
+  el.classList.add("active");
+  if(name==="fulfilled" && !window._fulfilledLoaded) loadFulfilled();
+  if(name==="tracking"  && !window._trackingLoaded)  loadTracking();
+}
+
+async function loadFulfilled(){
+  window._fulfilledLoaded = true;
+  const r = await fetch("/api/fulfilled");
+  const d = await r.json();
+  document.getElementById("o-ful-loading").style.display = "none";
+  const wrap = document.getElementById("o-ful-carriers");
+  if(!d.carriers?.length){wrap.innerHTML=`<div class="empty">No fulfilled international orders.</div>`;return}
+  wrap.innerHTML = d.carriers.map(c=>`
+    <div style="border-bottom:1px solid var(--border)">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--surf2);cursor:pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+        <span style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted2)">${c.carrier}</span>
+        <span style="font-size:11px;color:var(--muted)">${c.count} shipments</span>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th>Order</th><th>Customer</th><th>Destination</th><th>Shipped</th><th>Amount</th><th>Tracking</th></tr></thead>
+          <tbody>${c.orders.map(o=>`
+            <tr>
+              <td><span class="onum">#${o.number}</span></td>
+              <td>${esc(o.name)||"—"}</td>
+              <td>${flag(o.country)} ${o.city||o.country}</td>
+              <td style="color:var(--muted)">${o.date}</td>
+              <td class="amount">${o.currency} ${fmt(o.amount)}</td>
+              <td>${o.tracking_number?`<a class="tlink" href="${esc(o.tracking_link)}" target="_blank">${o.tracking_number} ↗</a>`:"—"}</td>
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+    </div>`).join("");
+}
+
+// ── CARRIERS PAGE ─────────────────────────────────────────────────────────
+async function loadCarriers(){
+  window._carriersLoaded = true;
+  const r = await fetch("/api/carriers");
+  const d = await r.json();
+  document.getElementById("car-loading").style.display = "none";
+  const wrap = document.getElementById("car-content");
+  wrap.style.display = "flex";
+  wrap.innerHTML = d.carriers.map(c => {
+    const info = c.info;
+    const queueRows = c.queue.map(o=>`
+      <tr>
+        <td><span class="onum">#${o.number}</span></td>
+        <td style="color:var(--muted)">${o.date}</td>
+        <td>${esc(o.name)||"—"}</td>
+        <td>${flag(o.country)} ${o.city||o.country}</td>
+        <td class="amount">${o.currency} ${fmt(o.amount)}</td>
+      </tr>`).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:20px">No orders in queue</td></tr>`;
+    const transitRows = c.transit.map(o=>`
+      <tr>
+        <td><span class="onum">#${o.number}</span></td>
+        <td style="color:var(--muted)">${o.shipped_date}</td>
+        <td>${esc(o.name)||"—"}</td>
+        <td>${flag(o.country)} ${o.city||o.country}</td>
+        <td style="color:var(--muted2);font-weight:600">${o.days_in_transit}d in transit</td>
+        <td>${o.tracking_number?`<a class="tlink" href="${esc(o.tracking_link)}" target="_blank">${o.tracking_number} ↗</a>`:"—"}</td>
+      </tr>`).join("") || `<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px">No shipments in transit</td></tr>`;
+    const countries = (info.countries||[]).map(cn=>`<span class="pill">${flag(cn)} ${cn}</span>`).join("");
+    return `
+      <div class="carrier-card">
+        <div class="carrier-head">
+          <div>
+            <div class="carrier-name-big">${c.carrier}</div>
+            <div class="carrier-region">${info.regions} · ${info.transit}</div>
+          </div>
+          <div style="margin-left:auto;text-align:right;font-size:11px;color:var(--muted)">${info.contact}</div>
+        </div>
+        ${countries?`<div class="carrier-pills">${countries}</div>`:""}
+        <div class="carrier-stats">
+          <div class="carrier-stat"><div class="cs-num">${c.queue_count}</div><div class="cs-lbl">In Queue</div></div>
+          <div class="carrier-stat"><div class="cs-num">${c.transit_count}</div><div class="cs-lbl">In Transit</div></div>
+          <div class="carrier-stat"><div class="cs-num" style="color:var(--muted)">${info.transit}</div><div class="cs-lbl">Est. Transit</div></div>
+        </div>
+        <div class="carrier-tabs">
+          <div class="tabs">
+            <div class="tab active" onclick="switchCarrierTab('${c.carrier}','queue',this)">Queue (${c.queue_count})</div>
+            <div class="tab" onclick="switchCarrierTab('${c.carrier}','transit',this)">In Transit (${c.transit_count})</div>
+          </div>
+          <div id="cq-${c.carrier}" class="tab-pane active scrollable">
+            <table><thead><tr><th>Order</th><th>Ordered</th><th>Customer</th><th>Destination</th><th>Amount</th></tr></thead>
+            <tbody>${queueRows}</tbody></table>
+          </div>
+          <div id="ct-${c.carrier}" class="tab-pane scrollable">
+            <table><thead><tr><th>Order</th><th>Shipped</th><th>Customer</th><th>Destination</th><th>Transit</th><th>Tracking</th></tr></thead>
+            <tbody>${transitRows}</tbody></table>
+          </div>
+        </div>
+      </div>`;
+  }).join("");
+}
+
+function switchCarrierTab(carrier, pane, el){
+  const card = el.closest(".carrier-card");
+  card.querySelectorAll(".tabs .tab").forEach(t=>t.classList.remove("active"));
+  card.querySelectorAll(".tab-pane").forEach(p=>p.classList.remove("active"));
+  document.getElementById(`c${pane[0]}-${carrier}`).classList.add("active");
+  el.classList.add("active");
+}
+
+// ── SLACK PAGE ────────────────────────────────────────────────────────────
+async function loadSlack(){
+  window._slackLoaded = true;
+  const r = await fetch("/api/slack");
+  const d = await r.json();
+  document.getElementById("slack-loading").style.display = "none";
+  if(!d.messages.length){
+    document.getElementById("slack-body").innerHTML=`<div class="empty">No messages yet.</div>`;return;
+  }
+  document.getElementById("slack-body").innerHTML = d.messages.map(m=>`
+    <div style="display:flex;gap:12px;padding:11px 16px;border-bottom:1px solid var(--border2)">
+      <div style="flex-shrink:0">
+        <div style="font-size:10px;color:var(--muted2);font-weight:600">#${m.channel}</div>
+        <div style="font-size:10px;color:var(--muted)">${m.time}</div>
+      </div>
+      <div style="font-size:12px;line-height:1.5">${esc(m.text)}</div>
+    </div>`).join("");
+}
+
+// ── TRACKING FULL PAGE ────────────────────────────────────────────────────
+const CONTINENT_MAP = {
+  "AE":"Middle East","SA":"Middle East","QA":"Middle East","KW":"Middle East","BH":"Middle East","OM":"Middle East","JO":"Middle East","LB":"Middle East","IQ":"Middle East","EG":"Middle East","PK":"Middle East","YE":"Middle East",
+  "GB":"Europe","DE":"Europe","FR":"Europe","IT":"Europe","PT":"Europe","ES":"Europe","NL":"Europe","BE":"Europe","PL":"Europe","CZ":"Europe","SK":"Europe","GR":"Europe","HR":"Europe","LV":"Europe","LT":"Europe","EE":"Europe","LU":"Europe","MT":"Europe","RO":"Europe","AT":"Europe","HU":"Europe","DK":"Europe","SE":"Europe","FI":"Europe","NO":"Europe","CH":"Europe","SI":"Europe","RS":"Europe","BG":"Europe","IE":"Europe",
+  "US":"Americas","CA":"Americas","MX":"Americas","BR":"Americas","AR":"Americas",
+  "AU":"Asia Pacific","NZ":"Asia Pacific","SG":"Asia Pacific","JP":"Asia Pacific","KR":"Asia Pacific","IN":"Asia Pacific",
+};
+const CONTINENT_ORDER = ["Middle East","Europe","Americas","Asia Pacific","Other"];
+let _trkFull=null,_trkCarrier="Aramex",_trkCountryFil="all",_trkStageFil="all";
+
+async function loadFullTracking(force){
+  if(!force && _trkFull) return applyTrkFilters();
+  document.getElementById("trk-full-loading").style.display = "flex";
+  document.getElementById("trk-full-view").style.display    = "none";
+  const r = await fetch("/api/tracking");
+  _trkFull = await r.json();
+  document.getElementById("trk-full-loading").style.display = "none";
+  document.getElementById("trk-full-view").style.display    = "flex";
+  ["Aramex","GLS","UPS","DHL","Other"].forEach(c => {
+    const n = _trkFull.shipments.filter(s=>s.carrier===c).length;
+    const unf = _trkFull.shipments.filter(s=>s.carrier===c&&s.stage===0).length;
+    const el = document.getElementById("trk-cnt-"+c);
+    if(el) el.textContent = n?(unf?`${n}·${unf}u`:n):"0";
+  });
+  applyTrkFilters();
+}
+
+function switchTrkCarrier(carrier,el){
+  _trkCarrier=carrier;_trkCountryFil="all";
+  document.querySelectorAll(".gh-tab[data-carrier]").forEach(t=>t.classList.remove("active"));
+  el.classList.add("active");
+  applyTrkFilters();
+}
+function setTrkCountry(country){
+  _trkCountryFil=_trkCountryFil===country?"all":country;_trkStageFil="all";
+  document.querySelectorAll(".filter-pill[data-ftype='country']").forEach(p=>p.classList.remove("active"));
+  if(_trkCountryFil!=="all"){
+    const a=document.querySelector(`.filter-pill[data-country="${CSS.escape(_trkCountryFil)}"]`);
+    if(a)a.classList.add("active");
+  } else {const a=document.getElementById("trk-pill-all");if(a)a.classList.add("active");}
+  renderStagebar();renderTrkContinents();
+}
+function setTrkStage(stage){
+  _trkStageFil=_trkStageFil===stage?"all":stage;
+  renderStagebar();renderTrkContinents();
+}
+function renderStagebar(){
+  const shipments=_trkFull.shipments.filter(s=>s.carrier===_trkCarrier);
+  const byStage=[0,0,0,0,0];shipments.forEach(s=>byStage[s.stage]++);
+  const labels=["Unfulfilled","Shipped","In Transit","Out for Del.","Delivered"];
+  document.getElementById("trk-stage-bar").innerHTML=labels.map((l,i)=>{
+    if(!byStage[i])return"";
+    const active=_trkStageFil===String(i);
+    return `<span class="stage-badge s${i}" onclick="setTrkStage('${i}')" style="font-size:10px;padding:4px 12px;cursor:pointer;${active?"outline:1px solid var(--muted2);outline-offset:2px":""}">${l}: ${byStage[i]}</span>`;
+  }).join("")||`<span style="font-size:11px;color:var(--muted)">No shipments.</span>`;
+}
+function applyTrkFilters(){
+  _trkCountryFil="all";_trkStageFil="all";
+  const shipments=_trkFull.shipments.filter(s=>s.carrier===_trkCarrier);
+  renderStagebar();
+  const countries=[...new Set(shipments.map(s=>s.country))].sort();
+  document.getElementById("trk-country-pills").innerHTML=
+    `<span class="filter-label">Country</span><span class="filter-pill active" id="trk-pill-all" data-ftype="country" onclick="setTrkCountry('all')">All (${shipments.length})</span>`+
+    countries.map(c=>{const n=shipments.filter(s=>s.country===c).length;return`<span class="filter-pill" data-ftype="country" data-country="${esc(c)}" onclick="setTrkCountry('${esc(c)}')">${flag(c)} ${c} <span style="opacity:.6">${n}</span></span>`}).join("");
+  renderTrkContinents();
+}
+function renderTrkContinents(){
+  let s=_trkFull.shipments.filter(s=>s.carrier===_trkCarrier);
+  if(_trkCountryFil!=="all")s=s.filter(x=>x.country===_trkCountryFil);
+  if(_trkStageFil!=="all")s=s.filter(x=>String(x.stage)===_trkStageFil);
+  s.sort((a,b)=>b.days_in_transit-a.days_in_transit);
+  if(!s.length){document.getElementById("trk-continents").innerHTML=`<div class="trk-empty">No shipments found.</div>`;return;}
+  const byC={};s.forEach(x=>{const c=CONTINENT_MAP[x.country_code]||"Other";if(!byC[c])byC[c]=[];byC[c].push(x)});
+  document.getElementById("trk-continents").innerHTML=CONTINENT_ORDER.filter(c=>byC[c]).map(cont=>{
+    const orders=byC[cont];
+    const rows=orders.map(x=>`
+      <div class="track-row">
+        <div class="track-top">
+          <span class="track-onum">#${x.number}</span><span class="track-sep">·</span>
+          <span class="track-name">${esc(x.name)||"—"}</span><span class="track-sep">·</span>
+          <span class="track-dest">${flag(x.country)} ${x.city||x.country}</span>
+          ${stageBadge(x.stage,x.status_source)}
+          <div class="track-meta">${trackMeta(x)}</div>
+        </div>
+        ${renderTimeline(x.stage)}
+      </div>`).join("");
+    return `<div class="continent-section">
+      <div class="continent-hdr" onclick="toggleCont(this)"><span class="continent-arrow">▼</span><span>${cont}</span><span class="continent-count">${orders.length} shipment${orders.length!==1?"s":""}</span></div>
+      <div class="continent-body">${rows}</div>
+    </div>`;
+  }).join("");
+}
+function toggleCont(hdr){hdr.classList.toggle("collapsed")}
+
+const STAGE_LABELS=["Unfulfilled","Shipped","In Transit","Out for Del.","Delivered"];
+const STAGE_LABELS_FULL=["Unfulfilled","Shipped","In Transit","Out for Delivery","Delivered"];
+
+function renderTimeline(stage){
+  let html=`<div class="tl">`;
+  STAGE_LABELS.forEach((lbl,i)=>{
+    const done=i<stage,active=i===stage;
+    html+=`<div class="tl-node"><div class="tl-dot ${done?"done":active?"active":""}">${done?"✓":""}</div><div class="tl-lbl ${done?"done":active?"active":""}">${lbl}</div></div>`;
+    if(i<STAGE_LABELS.length-1) html+=`<div class="tl-line ${i<stage?"done":""}"></div>`;
+  });
+  return html+`</div>`;
+}
+function stageBadge(stage,source){
+  const pill=`<span class="stage-badge s${stage}">${STAGE_LABELS_FULL[stage]||"—"}</span>`;
+  if(stage===0)return pill;
+  const src=source==="live"
+    ?`<span style="font-size:8px;border:1px solid var(--border);padding:0 5px;border-radius:2px;font-weight:600;color:var(--muted2)">LIVE</span>`
+    :`<span style="font-size:8px;border:1px solid var(--border2);padding:0 5px;border-radius:2px;color:var(--muted)">EST</span>`;
+  return pill+src;
+}
+function trackMeta(s){
+  if(s.stage===0){
+    const u=s.days_waiting>=2?`<span style="color:var(--red);font-weight:600">${s.days_waiting}d waiting — needs action</span>`:`<span style="color:var(--muted2)">Awaiting fulfillment</span>`;
+    return `Ordered ${s.order_date}<br>${u}`;
+  }
+  const tl=s.tracking_number?`<a class="tlink" href="${esc(s.tracking_link)}" target="_blank">${s.tracking_number} ↗</a><br>`:"";
+  const rs=s.shipment_status&&s.shipment_status!=="unknown"&&s.shipment_status!=="unfulfilled"?`<span style="color:var(--muted2);text-transform:capitalize">${s.shipment_status.replace(/_/g," ")}</span> · `:"";
+  const ed=s.stage<4?`<br><span style="color:var(--muted)">Est. ${s.est_delivery}</span>`:`<br><span style="color:var(--muted2);font-weight:600">Delivered</span>`;
+  return `${tl}${rs}${s.days_in_transit}d in transit${ed}`;
+}
+
+// ── PARCEL TRACKER (orders page) ─────────────────────────────────────────
+async function loadTracking(){
+  window._trackingLoaded=true;
+  document.getElementById("o-trk-loading").style.display="flex";
+  document.getElementById("o-trk-list").innerHTML="";
+  const r=await fetch("/api/tracking");
+  const d=await r.json();
+  document.getElementById("o-trk-loading").style.display="none";
+  if(!d.shipments?.length){document.getElementById("o-trk-list").innerHTML=`<div class="empty">No shipments in transit.</div>`;return;}
+  const byStage=[0,0,0,0,0];d.shipments.forEach(s=>byStage[s.stage]++);
+  document.getElementById("o-trk-summary").style.display="flex";
+  document.getElementById("o-trk-summary").innerHTML=["Unfulfilled","Shipped","In Transit","Out for Del.","Delivered"].map((l,i)=>
+    byStage[i]?`<span class="stage-badge s${i}" style="font-size:10px;padding:3px 10px">${l}: ${byStage[i]}</span>`:""
+  ).join("");
+  document.getElementById("o-trk-list").innerHTML=d.shipments.map(s=>`
+    <div class="track-row">
+      <div class="track-top">
+        <span class="track-onum">#${s.number}</span><span class="track-sep">·</span>
+        <span class="track-name">${esc(s.name)||"—"}</span><span class="track-sep">·</span>
+        <span class="track-dest">${flag(s.country)} ${s.city||s.country}</span>
+        <span>${carrierBadge(s.carrier)}</span>
+        ${stageBadge(s.stage,s.status_source)}
+        <div class="track-meta">${trackMeta(s)}</div>
+      </div>
+      ${renderTimeline(s.stage)}
+    </div>`).join("");
+}
+
+// ── ANALYTICS PAGE ────────────────────────────────────────────────────────
+let _analyticsData=null,_activeColor=null;
+async function loadAnalytics(force){
+  if(!force&&_analyticsData)return renderAnalytics(_analyticsData);
+  ["an-colors","an-countries","an-cxc"].forEach(id=>document.getElementById(id).innerHTML=`<div class="loading"><div class="spinner"></div></div>`);
+  const r=await fetch("/api/analytics");
+  _analyticsData=await r.json();
+  renderAnalytics(_analyticsData);
+}
+function renderAnalytics(d){
+  _activeColor=null;
+  document.getElementById("an-date").textContent=d.date;
+  document.getElementById("an-orders").textContent=d.total_orders;
+  document.getElementById("an-top-color").textContent=d.colors[0]?d.colors[0][0].split(" ")[0]:"—";
+  document.getElementById("an-top-country").textContent=d.countries[0]?flag(d.countries[0][0])+" "+d.countries[0][0]:"—";
+  document.getElementById("an-color-total").textContent=d.colors.reduce((s,[,n])=>s+n,0)+" units";
+  const maxC=d.colors[0]?d.colors[0][1]:1;
+  document.getElementById("an-colors").innerHTML=d.colors.map(([col,n])=>`
+    <div class="bar-row" style="cursor:pointer" onclick="filterByColor('${col}')" id="cbar-${col.replace(/ /g,'_')}">
+      <div class="bar-label">${col}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/maxC*100)}%"></div></div>
+      <div class="bar-num">${n}</div>
+    </div>`).join("");
+  const maxN=d.countries[0]?d.countries[0][1]:1;
+  document.getElementById("an-countries").innerHTML=d.countries.map(([cn,n])=>`
+    <div class="bar-row">
+      <div class="bar-label">${flag(cn)} ${cn}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/maxN*100)}%"></div></div>
+      <div class="bar-num">${n}</div>
+    </div>`).join("");
+  renderCxC(d,null);
+}
+function filterByColor(col){
+  if(_activeColor===col){_activeColor=null;renderCxC(_analyticsData,null);}
+  else{_activeColor=col;renderCxC(_analyticsData,col);}
+  document.querySelectorAll("[id^='cbar-']").forEach(el=>{el.style.background=""});
+  if(_activeColor){const el=document.getElementById("cbar-"+col.replace(/ /g,"_"));if(el)el.style.background="var(--surf3)"}
+}
+function renderCxC(d,filterColor){
+  const colors=filterColor?[[filterColor,d.color_by_country[filterColor]||[]]]:d.colors.map(([col])=>[col,d.color_by_country[col]||[]]);
+  document.getElementById("an-cxc").innerHTML=`<div style="overflow-x:auto"><table>
+    <thead><tr><th>Color</th><th>Country</th><th>Units</th></tr></thead>
+    <tbody>${colors.flatMap(([col,countries])=>(countries||[]).map(([cn,n],i)=>`
+      <tr>${i===0?`<td rowspan="${countries.length}" style="font-weight:600;vertical-align:top;padding-top:12px">${col}</td>`:""}<td>${flag(cn)} ${cn}</td><td style="font-weight:600">${n}</td></tr>`
+    )).join("")}</tbody>
+  </table></div>`;
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────
+async function init(){
+  await loadOverview();
+  loadChatList();
+}
+init();
+setInterval(loadOverview, 90000);
+</script>
+</body>
+</html>
