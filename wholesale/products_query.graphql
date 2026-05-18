@@ -1,0 +1,36 @@
+query GetProducts($cursor: String) {
+  products(first: 50, after: $cursor, query: "status:active") {
+    pageInfo { hasNextPage endCursor }
+    edges {
+      node {
+        id
+        title
+        handle
+        status
+        productType
+        vendor
+        tags
+        totalInventory
+        options { name values }
+        featuredMedia {
+          preview { image { url } }
+        }
+        variants(first: 100) {
+          edges {
+            node {
+              id
+              title
+              sku
+              barcode
+              price
+              compareAtPrice
+              availableForSale
+              inventoryQuantity
+              selectedOptions { name value }
+            }
+          }
+        }
+      }
+    }
+  }
+}

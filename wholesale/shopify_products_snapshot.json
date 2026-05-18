@@ -1,0 +1,4558 @@
+{
+  "products": {
+    "pageInfo": {
+      "hasNextPage": false,
+      "endCursor": "eyJsYXN0X2lkIjoxMDMxNTgyMTcxMTY3OSwibGFzdF92YWx1ZSI6IjEwMzE1ODIxNzExNjc5In0="
+    },
+    "edges": [
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971415359",
+          "title": "SOFT LOUNGE KIMONO BITTER COFFEE",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-aci-kahve",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 112,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--40_1feec015-0435-4303-8a80-389e5a82da09.jpg?v=1768685364"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357454655",
+                  "title": "STANDART",
+                  "sku": "47422073733220",
+                  "barcode": "47422073733220",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 112,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971480895",
+          "title": "SOFT LOUNGE TEE WHITE",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-ekru-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 0,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--770_759b21de-1d76-4fea-abb7-c2f066343abd.jpg?v=1768685366"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357520191",
+                  "title": "XS",
+                  "sku": "47420792275044",
+                  "barcode": "47420792275044",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357552959",
+                  "title": "S",
+                  "sku": "47420792897636",
+                  "barcode": "47420792897636",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357585727",
+                  "title": "M",
+                  "sku": "47420793520228",
+                  "barcode": "47420793520228",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357618495",
+                  "title": "L",
+                  "sku": "47420794142820",
+                  "barcode": "47420794142820",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971513663",
+          "title": "SOFT LOUNGE TEE BURGUNDY",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-murdum",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 0,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/ispirtolsnd1102-3-0024_70b7c7e7-c068-49b7-b48e-20963a5af9cc.jpg?v=1768685367"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357651263",
+                  "title": "XS",
+                  "sku": "47420788572260",
+                  "barcode": "47420788572260",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357684031",
+                  "title": "S",
+                  "sku": "47420789194852",
+                  "barcode": "47420789194852",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357716799",
+                  "title": "M",
+                  "sku": "47420789817444",
+                  "barcode": "47420789817444",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357749567",
+                  "title": "L",
+                  "sku": "47420790440036",
+                  "barcode": "47420790440036",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971546431",
+          "title": "SOFT LOUNGE TEE BLACK",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-si̇yah",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 10,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--527_a84e04dd-8212-471e-8126-ed8de88bce0f.jpg?v=1768685368"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357782335",
+                  "title": "XS",
+                  "sku": "47420784377956",
+                  "barcode": "47420784377956",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 10,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357815103",
+                  "title": "S",
+                  "sku": "47420785000548",
+                  "barcode": "47420785000548",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357847871",
+                  "title": "M",
+                  "sku": "47420785623140",
+                  "barcode": "47420785623140",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357880639",
+                  "title": "L",
+                  "sku": "47420786245732",
+                  "barcode": "47420786245732",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971579199",
+          "title": "SOFT LOUNGE TEE BUTTER YELLOW",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-tereyag-sarisi",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 6,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--106_6611c45b-fda6-441a-b897-740df1697297.jpg?v=1768685369"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357913407",
+                  "title": "XS",
+                  "sku": "47420780085348",
+                  "barcode": "47420780085348",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 6,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357946175",
+                  "title": "S",
+                  "sku": "47420780707940",
+                  "barcode": "47420780707940",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723357978943",
+                  "title": "M",
+                  "sku": "47420781330532",
+                  "barcode": "47420781330532",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358011711",
+                  "title": "L",
+                  "sku": "47420781953124",
+                  "barcode": "47420781953124",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971611967",
+          "title": "SOFT LOUNGE TEE BABY BLUE",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-bebe-mavi̇si̇",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 36,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--914_c8f87e25-d5ee-4fc2-b91d-a6abb4e0747a.jpg?v=1768685370"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358044479",
+                  "title": "XS",
+                  "sku": "47420772843620",
+                  "barcode": "47420772843620",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 29,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358077247",
+                  "title": "S",
+                  "sku": "47420773466212",
+                  "barcode": "47420773466212",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 7,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358110015",
+                  "title": "M",
+                  "sku": "47420774088804",
+                  "barcode": "47420774088804",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358142783",
+                  "title": "L",
+                  "sku": "47420774711396",
+                  "barcode": "47420774711396",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971775807",
+          "title": "SOFT LOUNGE TEE GREY MELANGE",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-gri̇-melanj",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 20,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/grimelanjlsnd1102-4--222.jpg?v=1768685376"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358732607",
+                  "title": "XS",
+                  "sku": "47420724904036",
+                  "barcode": "47420724904036",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 16,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358765375",
+                  "title": "S",
+                  "sku": "47420725526628",
+                  "barcode": "47420725526628",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 4,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358798143",
+                  "title": "M",
+                  "sku": "47420726149220",
+                  "barcode": "47420726149220",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358830911",
+                  "title": "L",
+                  "sku": "47420726771812",
+                  "barcode": "47420726771812",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971808575",
+          "title": "SOFT LOUNGE TEE BITTER COFFEE",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-aci-kahve-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 0,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4479_897cd0f9-b230-44d9-83a7-37cb7a07fc99.jpg?v=1768685377"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358863679",
+                  "title": "XS",
+                  "sku": "47420722217060",
+                  "barcode": "47420722217060",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358896447",
+                  "title": "S",
+                  "sku": "47420722839652",
+                  "barcode": "47420722839652",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358929215",
+                  "title": "M",
+                  "sku": "47420723462244",
+                  "barcode": "47420723462244",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723358961983",
+                  "title": "L",
+                  "sku": "47420724084836",
+                  "barcode": "47420724084836",
+                  "price": "65.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205971874111",
+          "title": "SOFT LOUNGE TEE RED",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-kirmizi-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 36,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/new1LessAndRomance_2026_04_11_1027.png?v=1776240524"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359125823",
+                  "title": "XS",
+                  "sku": "47420699344996",
+                  "barcode": "47420699344996",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 29,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359158591",
+                  "title": "S",
+                  "sku": "47420699967588",
+                  "barcode": "47420699967588",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 7,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359191359",
+                  "title": "M",
+                  "sku": "47420700590180",
+                  "barcode": "47420700590180",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359224127",
+                  "title": "L",
+                  "sku": "47420701212772",
+                  "barcode": "47420701212772",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972005183",
+          "title": "SOFT LOUNGE TEE MINK",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-vi̇zon",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 0,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4281_a9661aed-467e-41b6-8c4a-6220f6816e06.jpg?v=1768685383"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359650111",
+                  "title": "XS",
+                  "sku": "47420661891172",
+                  "barcode": "47420661891172",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359682879",
+                  "title": "S",
+                  "sku": "47420662513764",
+                  "barcode": "47420662513764",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359715647",
+                  "title": "M",
+                  "sku": "47420663136356",
+                  "barcode": "47420663136356",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359748415",
+                  "title": "L",
+                  "sku": "47420663758948",
+                  "barcode": "47420663758948",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972037951",
+          "title": "SOFT LOUNGE TEE STONE",
+          "handle": "fit-kesim-kisa-kollu-t-shirt-tas",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 43,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/stonelsnd1102-4--583.jpg?v=1768685385"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359781183",
+                  "title": "XS",
+                  "sku": "47420656746596",
+                  "barcode": "47420656746596",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 34,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359813951",
+                  "title": "S",
+                  "sku": "47420657369188",
+                  "barcode": "47420657369188",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 9,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359846719",
+                  "title": "M",
+                  "sku": "47420657991780",
+                  "barcode": "47420657991780",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723359879487",
+                  "title": "L",
+                  "sku": "47420658614372",
+                  "barcode": "47420658614372",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972103487",
+          "title": "SOFT LOUNGE LONG TEE WHITE",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-ekru",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 171,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/topwhite-LessAndRomance_2026_04_11_0756.png?v=1776241310"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360076095",
+                  "title": "XS",
+                  "sku": "47420623126628",
+                  "barcode": "47420623126628",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360108863",
+                  "title": "S",
+                  "sku": "47420623749220",
+                  "barcode": "47420623749220",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 62,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360141631",
+                  "title": "M",
+                  "sku": "47420624371812",
+                  "barcode": "47420624371812",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360174399",
+                  "title": "L",
+                  "sku": "47420624994404",
+                  "barcode": "47420624994404",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 33,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972169023",
+          "title": "SOFT LOUNGE LONG TEE BURGUNDY",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-murdum",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 149,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/brug._-LessAndRomance_2026_04_11_0327.png?v=1776240911"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360403775",
+                  "title": "XS",
+                  "sku": "47420619423844",
+                  "barcode": "47420619423844",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 46,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360436543",
+                  "title": "S",
+                  "sku": "47420620046436",
+                  "barcode": "47420620046436",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360469311",
+                  "title": "M",
+                  "sku": "47420620669028",
+                  "barcode": "47420620669028",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 29,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360502079",
+                  "title": "L",
+                  "sku": "47420621291620",
+                  "barcode": "47420621291620",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972201791",
+          "title": "SOFT LOUNGE LONG TEE BLACK",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-si̇yah",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 116,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--504_46ce48df-a3db-44d0-89f4-d3bfe52bd142.jpg?v=1768685389"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360534847",
+                  "title": "XS",
+                  "sku": "47420616802404",
+                  "barcode": "47420616802404",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 29,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360567615",
+                  "title": "S",
+                  "sku": "47420617424996",
+                  "barcode": "47420617424996",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 14,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360600383",
+                  "title": "M",
+                  "sku": "47420618047588",
+                  "barcode": "47420618047588",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 37,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360633151",
+                  "title": "L",
+                  "sku": "47420618670180",
+                  "barcode": "47420618670180",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972234559",
+          "title": "SOFT LOUNGE LONG TEE BUTTER YELLOW",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-tereyag-sarisi",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 145,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--132_662a453f-5b18-47aa-86a9-8a6341297fc0.jpg?v=1768685391"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360665919",
+                  "title": "XS",
+                  "sku": "47420612280420",
+                  "barcode": "47420612280420",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360698687",
+                  "title": "S",
+                  "sku": "47420612903012",
+                  "barcode": "47420612903012",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360731455",
+                  "title": "M",
+                  "sku": "47420613525604",
+                  "barcode": "47420613525604",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 27,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360764223",
+                  "title": "L",
+                  "sku": "47420614148196",
+                  "barcode": "47420614148196",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 44,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972267327",
+          "title": "SOFT LOUNGE LONG TEE BABY BLUE",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-bebe-mavi̇si̇",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 115,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--898_e047590c-98e1-49d3-bbdf-6079e0b7212d.jpg?v=1768685391"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360796991",
+                  "title": "XS",
+                  "sku": "47420601499748",
+                  "barcode": "47420601499748",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 31,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360829759",
+                  "title": "S",
+                  "sku": "47420602122340",
+                  "barcode": "47420602122340",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 4,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360862527",
+                  "title": "M",
+                  "sku": "47420602744932",
+                  "barcode": "47420602744932",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723360895295",
+                  "title": "L",
+                  "sku": "47420603367524",
+                  "barcode": "47420603367524",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 42,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972431167",
+          "title": "SOFT LOUNGE LONG TEE GREY MELANGE",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-gri̇-melanj",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 50,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/grimelanjlsnd1102-4--243_fb788f79-5440-4f41-8c65-350652bb4ed2.jpg?v=1768685396"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361452351",
+                  "title": "XS",
+                  "sku": "47420528918628",
+                  "barcode": "47420528918628",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 24,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361485119",
+                  "title": "S",
+                  "sku": "47420529541220",
+                  "barcode": "47420529541220",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 14,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361517887",
+                  "title": "M",
+                  "sku": "47420530163812",
+                  "barcode": "47420530163812",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361550655",
+                  "title": "L",
+                  "sku": "47420530786404",
+                  "barcode": "47420530786404",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 12,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972463935",
+          "title": "SOFT LOUNGE LONG TEE BITTER COFFEE",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-aci-kahve",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 87,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4493_c8863594-c238-48dd-8539-4a999d7c21bc.jpg?v=1768685398"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361583423",
+                  "title": "XS",
+                  "sku": "47420521414756",
+                  "barcode": "47420521414756",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 30,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361616191",
+                  "title": "S",
+                  "sku": "47420522037348",
+                  "barcode": "47420522037348",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 16,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361648959",
+                  "title": "M",
+                  "sku": "47420522659940",
+                  "barcode": "47420522659940",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 14,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361681727",
+                  "title": "L",
+                  "sku": "47420523282532",
+                  "barcode": "47420523282532",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 27,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972529471",
+          "title": "SOFT LOUNGE LONG TEE RED",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-kirmizi",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 176,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/kirmizilsnd1102-4--351_256d7810-3147-42bf-8e56-40830ffe4de0.jpg?v=1768685400"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361845567",
+                  "title": "XS",
+                  "sku": "47420510568548",
+                  "barcode": "47420510568548",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 55,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361878335",
+                  "title": "S",
+                  "sku": "47420511191140",
+                  "barcode": "47420511191140",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361911103",
+                  "title": "M",
+                  "sku": "47420511813732",
+                  "barcode": "47420511813732",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 38,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723361943871",
+                  "title": "L",
+                  "sku": "47420512436324",
+                  "barcode": "47420512436324",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 47,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972693311",
+          "title": "SOFT LOUNGE LONG TEE MINK",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-vi̇zon",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 143,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4316.jpg?v=1768685404"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362402623",
+                  "title": "XS",
+                  "sku": "47420490252388",
+                  "barcode": "47420490252388",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 32,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362435391",
+                  "title": "S",
+                  "sku": "47420490874980",
+                  "barcode": "47420490874980",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362468159",
+                  "title": "M",
+                  "sku": "47420491497572",
+                  "barcode": "47420491497572",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 35,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362500927",
+                  "title": "L",
+                  "sku": "47420492120164",
+                  "barcode": "47420492120164",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 40,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972824383",
+          "title": "SOFT LOUNGE LONG TEE STONE",
+          "handle": "fit-kesim-uzun-kollu-t-shirt-tas",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 161,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--573.jpg?v=1768685405"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362533695",
+                  "title": "XS",
+                  "sku": "47420484976740",
+                  "barcode": "47420484976740",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 50,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362566463",
+                  "title": "S",
+                  "sku": "47420485599332",
+                  "barcode": "47420485599332",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 54,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362599231",
+                  "title": "M",
+                  "sku": "47420486221924",
+                  "barcode": "47420486221924",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 26,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362631999",
+                  "title": "L",
+                  "sku": "47420486844516",
+                  "barcode": "47420486844516",
+                  "price": "65.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 31,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972955455",
+          "title": "SOFT LOUNGE KIMONO BURGUNDY",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-murdum",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 41,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/ispirtolsnd1102-3-0006_a58e3085-6623-49d7-935f-48b16bdf86f6.jpg?v=1768685409"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362795839",
+                  "title": "STANDART",
+                  "sku": "47420469313636",
+                  "barcode": "47420469313636",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 41,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205972988223",
+          "title": "SOFT LOUNGE KIMONO GREY MELANGE",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-gri-melanj",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 0,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/grimelanjlsnd1102-4--278_45da24ba-5680-4a5c-a213-f872d20e9221.jpg?v=1768685410"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362828607",
+                  "title": "STANDART",
+                  "sku": "47420466856036",
+                  "barcode": "47420466856036",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973020991",
+          "title": "SOFT LOUNGE KIMONO RED",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-kirmizi",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 46,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            },
+            {
+              "name": "Color",
+              "values": [
+                "red"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/kirmizilsnd1102-4--332_bced4efa-74a1-4482-bd8a-b6e537f6426c.jpg?v=1768685413"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362861375",
+                  "title": "STANDART / red",
+                  "sku": "47420465872996",
+                  "barcode": "47420465872996",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 46,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "red"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973053759",
+          "title": "SOFT LOUNGE KIMONO BLACK",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-si̇yah",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 49,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--452_66ab68de-455d-4c84-ba6e-1f3c42759baf.jpg?v=1768685414"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723362894143",
+                  "title": "STANDART",
+                  "sku": "47420465381476",
+                  "barcode": "47420465381476",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 49,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973184831",
+          "title": "SOFT LOUNGE KIMONO BUTTER YELLOW",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-tereyag-sarisi-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 37,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--190_fd380943-5e8d-4365-b11e-416cba9e9d1c.jpg?v=1768685417"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723363090751",
+                  "title": "STANDART",
+                  "sku": "47420453617764",
+                  "barcode": "47420453617764",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 37,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973250367",
+          "title": "SOFT LOUNGE KIMONO BABY BLUE",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-bebe-mavi̇si̇",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 23,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--855_c29cc737-befd-4432-b9ca-edb0368a3093.jpg?v=1768685421"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723363189055",
+                  "title": "STANDART",
+                  "sku": "47420451848292",
+                  "barcode": "47420451848292",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 23,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973414207",
+          "title": "SOFT LOUNGE KIMONO WHITE",
+          "handle": "kemerli̇-kombi̇ne-uzunb-ki̇mono-ekru",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 54,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--821_0014db05-9c11-4096-b908-cb07f64bf7b6.jpg?v=1768685426"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723363352895",
+                  "title": "STANDART",
+                  "sku": "47420445917284",
+                  "barcode": "47420445917284",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 54,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973446975",
+          "title": "SOFT LOUNGE KIMONO MINK",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-koyu-vi̇zon",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 56,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4237.jpg?v=1768685428"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723363385663",
+                  "title": "STANDART",
+                  "sku": "47420445196388",
+                  "barcode": "47420445196388",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 56,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205973479743",
+          "title": "SOFT LOUNGE KIMONO STONE",
+          "handle": "kemerli̇-kombi̇ne-uzun-ki̇mono-tas",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 114,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "STANDART"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--600_0f92f93b-235d-4a2e-bcdb-0fb4377ca581.jpg?v=1768685428"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723363418431",
+                  "title": "STANDART",
+                  "sku": "47420443983972",
+                  "barcode": "47420443983972",
+                  "price": "95.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 114,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "STANDART"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205974266175",
+          "title": "SOFT LOUNGE PANT WHITE",
+          "handle": "rahat-dokumlu-pantolon-ekru",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 169,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/beyazpants1-LessAndRomance_2026_04_11_0573.png?v=1776240747"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723364925759",
+                  "title": "XS-S",
+                  "sku": "SK34539947",
+                  "barcode": "47304202911844",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 61,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723364958527",
+                  "title": "M-L",
+                  "sku": "SK52781633",
+                  "barcode": "47304203534436",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 108,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205974298943",
+          "title": "SOFT LOUNGE PANT RED",
+          "handle": "rahat-dokumlu-pantolon-aci-kahve-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": -44,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/kirmizilsnd1102-4--313_b114e66b-bca9-40f6-b67f-601e0896d028.jpg?v=1768685458"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723364991295",
+                  "title": "XS-S",
+                  "sku": null,
+                  "barcode": "47304194654308",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": -24,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365024063",
+                  "title": "M-L",
+                  "sku": null,
+                  "barcode": "47304195276900",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": -20,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205974364479",
+          "title": "SOFT LOUNGE PANT GREY MELANGE",
+          "handle": "rahat-dokumlu-pantolon-bebe-si̇yah-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 55,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/grimelanjlsnd1102-4--206.jpg?v=1768685460"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365122367",
+                  "title": "XS-S",
+                  "sku": "47304168472676",
+                  "barcode": "47304168472676",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 26,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365155135",
+                  "title": "M-L",
+                  "sku": "47304169029732",
+                  "barcode": "47304169029732",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 29,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205974397247",
+          "title": "SOFT LOUNGE PANT BLACK",
+          "handle": "rahat-dokumlu-pantolon-bebe-mavi̇si̇-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 78,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--496_83931810-aa9c-445f-ac14-70d5cbe23163.jpg?v=1768685461"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365187903",
+                  "title": "XS-S",
+                  "sku": "47304160411748",
+                  "barcode": "47304160411748",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365220671",
+                  "title": "M-L",
+                  "sku": "47304160968804",
+                  "barcode": "47304160968804",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 42,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205974430015",
+          "title": "SOFT LOUNGE PANT BABY BLUE",
+          "handle": "rahat-dokumlu-pantolon-tereyagi-sarisi-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 169,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--885_f4093fe0-61be-4369-8b60-4a8b780ec018.jpg?v=1768685463"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365253439",
+                  "title": "XS-S",
+                  "sku": "47304154251364",
+                  "barcode": "47304154251364",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 42,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723365286207",
+                  "title": "M-L",
+                  "sku": "47304154808420",
+                  "barcode": "47304154808420",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 127,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205976625471",
+          "title": "SOFT ESSENTIAL TOP STONE",
+          "handle": "kalin-askili-atlet-tas",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 242,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/stonelsnd1102-4--597.jpg?v=1768685517"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370692927",
+                  "title": "XS",
+                  "sku": "SK74445937",
+                  "barcode": "47296076382308",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 43,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370725695",
+                  "title": "S",
+                  "sku": "SK19994136",
+                  "barcode": "47296077004900",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 58,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370758463",
+                  "title": "M",
+                  "sku": "SK67847545",
+                  "barcode": "47296077627492",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 44,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370791231",
+                  "title": "L",
+                  "sku": "SK26476719",
+                  "barcode": "47296078250084",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 97,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205976658239",
+          "title": "SOFT ESSENTIAL TOP MINK",
+          "handle": "kalin-askili-atlet-koyu-vi̇zon",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 76,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            },
+            {
+              "name": "Color",
+              "values": [
+                "koyu-vizon"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4270_869979c0-0ad7-453b-ba1e-ce0524c67904.jpg?v=1768685518"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370823999",
+                  "title": "XS / koyu-vizon",
+                  "sku": "SK58682929",
+                  "barcode": "47296066781284",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 28,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "koyu-vizon"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370856767",
+                  "title": "S / koyu-vizon",
+                  "sku": "SK84536662",
+                  "barcode": "47296067403876",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 24,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "koyu-vizon"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370889535",
+                  "title": "M / koyu-vizon",
+                  "sku": "SK47520834",
+                  "barcode": "47296068026468",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "koyu-vizon"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723370922303",
+                  "title": "L / koyu-vizon",
+                  "sku": "SK28552341",
+                  "barcode": "47296068649060",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 24,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "koyu-vizon"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205976854847",
+          "title": "SOFT ESSENTIAL TOP BITTER COFFEE",
+          "handle": "kalin-askili-aci-kahve",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 201,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            },
+            {
+              "name": "Color",
+              "values": [
+                "aci-kahve-1"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4523_15064479-b0c4-47ba-8ee7-97ad6c5ef0fa.jpg?v=1768685530"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371643199",
+                  "title": "XS / aci-kahve-1",
+                  "sku": "SK97786442",
+                  "barcode": "47296008519780",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 44,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "aci-kahve-1"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371675967",
+                  "title": "S / aci-kahve-1",
+                  "sku": "SK23388385",
+                  "barcode": "47296009175140",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 25,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "aci-kahve-1"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371708735",
+                  "title": "M / aci-kahve-1",
+                  "sku": "SK46007666",
+                  "barcode": "47296009830500",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 66,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "aci-kahve-1"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371741503",
+                  "title": "L / aci-kahve-1",
+                  "sku": "SK40989095",
+                  "barcode": "47296010485860",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 66,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "aci-kahve-1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205976887615",
+          "title": "SOFT ESSENTIAL TOP GREY MELANGE",
+          "handle": "kalin-askili-gri̇-melanj",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 205,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/grimelanjlsnd1102-4--208.jpg?v=1768685530"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371774271",
+                  "title": "XS",
+                  "sku": "SK19033854",
+                  "barcode": "47295997149284",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 61,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371807039",
+                  "title": "S",
+                  "sku": "SK32872921",
+                  "barcode": "47295997804644",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 15,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371839807",
+                  "title": "M",
+                  "sku": "SK71173516",
+                  "barcode": "47295998460004",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 39,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723371872575",
+                  "title": "L",
+                  "sku": "SK55525857",
+                  "barcode": "47295999115364",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 90,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205977051455",
+          "title": "SOFT ESSENTIAL TOP BABY BLUE",
+          "handle": "kalin-askili-tereyagi-sarisi-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 184,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--883_36981ccc-897d-4b3f-87bd-d40885385142.jpg?v=1768685536"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372429631",
+                  "title": "XS",
+                  "sku": "SK17493288",
+                  "barcode": "47295918800996",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 25,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372462399",
+                  "title": "S",
+                  "sku": "SK23139959",
+                  "barcode": "47295919423588",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 26,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372495167",
+                  "title": "M",
+                  "sku": "SK30913441",
+                  "barcode": "47295920046180",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 76,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372527935",
+                  "title": "L",
+                  "sku": "SK73923410",
+                  "barcode": "47295920668772",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 57,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205977116991",
+          "title": "SOFT ESSENTIAL TOP BUTTER YELLOW",
+          "handle": "kalin-askili-tereyagi-sarisi",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 403,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--62_7e148fb9-6b8b-4c7b-9f78-a66ecf733619.jpg?v=1768685537"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372593471",
+                  "title": "XS",
+                  "sku": "SK86939661",
+                  "barcode": "47295910871140",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 144,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372626239",
+                  "title": "S",
+                  "sku": "SK23116195",
+                  "barcode": "47295911493732",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 62,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372659007",
+                  "title": "M",
+                  "sku": "SK96623925",
+                  "barcode": "47295912116324",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 69,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372691775",
+                  "title": "L",
+                  "sku": "SK86535590",
+                  "barcode": "47295912738916",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 128,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205977149759",
+          "title": "SOFT ESSENTIAL TOP BLACK",
+          "handle": "kalin-askili-atlet-si̇yah",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 206,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--500_ae2f8103-655b-446d-9e1c-d8e9ebeb1fc0.jpg?v=1768685538"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372757311",
+                  "title": "XS",
+                  "sku": "SK95136358",
+                  "barcode": "47295903432804",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 64,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372790079",
+                  "title": "S",
+                  "sku": "SK35454033",
+                  "barcode": "47295904055396",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 41,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372822847",
+                  "title": "M",
+                  "sku": "SK77360182",
+                  "barcode": "47295904677988",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 47,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372855615",
+                  "title": "L",
+                  "sku": "SK23095958",
+                  "barcode": "47295905300580",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 54,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205977182527",
+          "title": "SOFT ESSENTIAL TOP BURGUNDY",
+          "handle": "kalin-askili-atlet-ekru-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 221,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/ispirtoispirtolsnd1102-3-0020.jpg?v=1768685539"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372888383",
+                  "title": "XS",
+                  "sku": "SK56794478",
+                  "barcode": "47295890718820",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 59,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372921151",
+                  "title": "S",
+                  "sku": "SK34644684",
+                  "barcode": "47295891341412",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 42,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372953919",
+                  "title": "M",
+                  "sku": "SK97901055",
+                  "barcode": "47295891964004",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 25,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723372986687",
+                  "title": "L",
+                  "sku": "SK21364772",
+                  "barcode": "47295892586596",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 95,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205981311295",
+          "title": "SOFT LOUNGE PANT BUTTER YELLOW",
+          "handle": "rahat-dokumlu-pantolon-yag-yesili-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 25,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--59_ecf3f4cf-525e-4cfd-934a-eaf1718128b3.jpg?v=1768685679"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387306303",
+                  "title": "XS-S",
+                  "sku": "47280364847204",
+                  "barcode": "47280364847204",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387339071",
+                  "title": "M-L",
+                  "sku": "47280365502564",
+                  "barcode": "47280365502564",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 25,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205981475135",
+          "title": "SOFT LOUNGE PANT MINK",
+          "handle": "rahat-dokumlu-pantolon-bordo-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 17,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4255_a8f6e553-6b3c-4d39-a9cf-721a4dab5570.jpg?v=1768685682"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387601215",
+                  "title": "XS-S",
+                  "sku": "47280337682532",
+                  "barcode": "47280337682532",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 17,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387633983",
+                  "title": "M-L",
+                  "sku": "47280338337892",
+                  "barcode": "47280338337892",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": false,
+                  "inventoryQuantity": 0,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205981507903",
+          "title": "SOFT LOUNGE PANT STONE",
+          "handle": "rahat-dokumlu-pantolon-lime-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 151,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--589_d9e7cff4-7c2a-4b6c-b673-6add70258647.jpg?v=1768685684"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387666751",
+                  "title": "XS-S",
+                  "sku": "SK27987679",
+                  "barcode": "47280335519844",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 36,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387699519",
+                  "title": "M-L",
+                  "sku": "SK89264526",
+                  "barcode": "47280336175204",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 115,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205981573439",
+          "title": "SOFT LOUNGE PANT BITTER COFFEE",
+          "handle": "rahat-dokumlu-pantolon-antrasit-bordo-copy",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 85,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-3-4522_584cec01-d101-4d08-8a57-d618ec526efd.jpg?v=1768685685"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387797823",
+                  "title": "XS-S",
+                  "sku": "SK47241635",
+                  "barcode": "47292988522596",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 61,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387830591",
+                  "title": "M-L",
+                  "sku": "SK35681824",
+                  "barcode": "47292989112420",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 24,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205981671743",
+          "title": "SOFT LOUNGE PANT BURGUNDY",
+          "handle": "rahat-dokumlu-pantolon-1",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 181,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS-S",
+                "M-L"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/ispirtolsnd1102-3-6394_3c36cc57-d4de-4171-bdea-47f25d43eab8.jpg?v=1768685688"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723387994431",
+                  "title": "XS-S",
+                  "sku": "47280319823972",
+                  "barcode": "47280319823972",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 79,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS-S"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723388027199",
+                  "title": "M-L",
+                  "sku": "47280320479332",
+                  "barcode": "47280320479332",
+                  "price": "75.00",
+                  "compareAtPrice": "0.00",
+                  "availableForSale": true,
+                  "inventoryQuantity": 102,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M-L"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10205982163263",
+          "title": "SOFT ESSENTIAL TOP WHITE",
+          "handle": "kalin-askili-atlet",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 160,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            },
+            {
+              "name": "Color",
+              "values": [
+                "ekru"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/lsnd1102-4--764_8405570c-7955-4e13-82f9-77de42c8c2e3.jpg?v=1768685703"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723389731135",
+                  "title": "XS / ekru",
+                  "sku": "SK43561542",
+                  "barcode": "47275095588964",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 37,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "ekru"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723389763903",
+                  "title": "S / ekru",
+                  "sku": "SK50724579",
+                  "barcode": "47275096178788",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 28,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "ekru"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723389796671",
+                  "title": "M / ekru",
+                  "sku": "SK50798258",
+                  "barcode": "47275096768612",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 35,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "ekru"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/51723389829439",
+                  "title": "L / ekru",
+                  "sku": "SK32650807",
+                  "barcode": "47275097358436",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 60,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "ekru"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/Product/10315821711679",
+          "title": "SOFT ESSENTIAL TOP RED",
+          "handle": "soft-essential-top-red",
+          "status": "ACTIVE",
+          "productType": "",
+          "vendor": "LessandRomance",
+          "tags": [
+            "WW"
+          ],
+          "totalInventory": 316,
+          "options": [
+            {
+              "name": "SIZE",
+              "values": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ]
+            },
+            {
+              "name": "Color",
+              "values": [
+                "red"
+              ]
+            }
+          ],
+          "featuredMedia": {
+            "preview": {
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0952/3465/4527/files/kirmizilsnd1102-4--329.jpg?v=1768685525"
+              }
+            }
+          },
+          "variants": {
+            "edges": [
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/52708351476031",
+                  "title": "XS / red",
+                  "sku": "SK44557730",
+                  "barcode": "47296030834788",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 89,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "XS"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "red"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/52708351508799",
+                  "title": "S / red",
+                  "sku": "SK80437910",
+                  "barcode": "47296031490148",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 68,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "S"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "red"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/52708351541567",
+                  "title": "M / red",
+                  "sku": "SK42951752",
+                  "barcode": "47296032145508",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 66,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "M"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "red"
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "id": "gid://shopify/ProductVariant/52708351574335",
+                  "title": "L / red",
+                  "sku": "SK51525787",
+                  "barcode": "47296032800868",
+                  "price": "55.00",
+                  "compareAtPrice": null,
+                  "availableForSale": true,
+                  "inventoryQuantity": 93,
+                  "selectedOptions": [
+                    {
+                      "name": "SIZE",
+                      "value": "L"
+                    },
+                    {
+                      "name": "Color",
+                      "value": "red"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
